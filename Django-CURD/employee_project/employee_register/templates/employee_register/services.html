@@ -1,0 +1,221 @@
+{% extends "employee_register/index.html" %}
+{% block index %}
+{% load static %}
+
+{% comment %} {% static 'employee_register/' %} {% endcomment %}
+
+<!--Page Header-->
+<section id="main-banner-page" class="position-relative page-header service-header section-nav-smooth parallax">
+    <div class="overlay overlay-dark opacity-7 z-index-1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="page-titles whitecolor text-center padding_top padding_bottom">
+                    <h2 class="font-xlight pt-3">We Help To</h2>
+                    <h2 class="font-bold">Elevate Your Business</h2>
+                    <h2 class="font-xlight">To Next Level</h2>
+                    <h3 class="font-light pb-4 pt-2"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="gradient-bg title-wrap mt-n5">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 whitecolor">
+                    <h3 class="float-left">Services</h3>
+                    <ul class="breadcrumb top10 bottom10 float-right">
+                        <li class="breadcrumb-item hover-light"><a href="{% url 'services' %}">Home</a></li>
+                        <li class="breadcrumb-item hover-light">Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Page Header ends -->
+<!-- Services us -->
+<section id="our-services" class="padding bglight">
+    <div class="container">
+        <div class="col-md-12 text-center heading_space wow fadeIn" data-wow-delay="300ms">
+            <h2 class="heading bottom30 darkcolor font-light2"><span class="font-weight-light">Our Service</span> Detail
+                <span class="divider-center"></span>
+            </h2>
+            
+        </div>
+        
+        <div id="services-measonry" class="cbp">
+            <div class="cbp-item digital brand design">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-1.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="#stayconnect" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content brand text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="#stayconnect">Advisory for Start-ups</a></h3>
+                        <p class="bottom15">Every startup journey comes with a rough path. Our team with their expertise can make this journey very easy and help you to take your business constantly to a new height
+                        </p>
+                        <a href="#stayconnect" class="button-readmore">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item digital graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-2.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="s#stayconnect" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="#stayconnect">Bookkeeping</a></h3>
+                        <p class="bottom15">You may think bookkeeping doesn’t require much and can be taken care of easily by anybody. But as your business grows bigger with time, so do the books get longer in numbers. So it’ll be always a good decision to let the experts take care of your bookkeeping. It will be better for any business in the long run
+                        </p>
+                        <a href="#stayconnect" class="button-readmore">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item design">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-3.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="#stayconnect" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="#stayconnect">Investigation</a></h3>
+                        <p class="bottom15">Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
+                            Sed ornare ligula Progressively generate synergistic eget.
+                        </p>
+                        <a href="#stayconnect" class="button-readmore">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-4.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="#stayconnect" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="#stayconnect">Payroll & RTI Submission</a></h3>
+                        <p class="bottom15">Payrolls can be messy and very time-consuming. But our payroll services ensure a hassle-free service and we also ensure that your employees receive the correct amount of salary every single time. We can also do the RTI (PAYE) returns for the HMRC
+                        </p>
+                        <a href="#stayconnect" class="button-readmore">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item digital">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-5.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="#stayconnect" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="#stayconnect">Automatic Enrollment for pensions</a></h3>
+                        <p class="bottom15">Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
+                            Sed ornare ligula Progressively generate synergistic eget.
+                        </p>
+                        <a href="#stayconnect" class="button-readmore">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item brand design graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-6.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="#stayconnect" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="#stayconnect">Company Secretarial & Other</a></h3>
+                        <p class="bottom15">Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
+                            Sed ornare ligula Progressively generate synergistic eget.
+                        </p>
+                        <a href="#stayconnect" class="button-readmore">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item brand design graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-7.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="#stayconnect" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="#stayconnect">Statutory Accounts</a></h3>
+                        <p class="bottom15">Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
+                            Sed ornare ligula Progressively generate synergistic eget.
+                        </p>
+                        <a href="#stayconnect" class="button-readmore">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item brand design graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-8.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="#stayconnect" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="#stayconnect">Tax filing for all business types</a></h3>
+                        <p class="bottom15">Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
+                            Sed ornare ligula Progressively generate synergistic eget.
+                        </p>
+                        <a href="#stayconnect" class="button-readmore">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item brand design graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-9.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="#stayconnect" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="#stayconnect">VAT</a></h3>
+                        <p class="bottom15">We can get your VAT registrations done and get your VAT returns, tax refunds, and payments done in an organized manner
+                        </p>
+                        <a href="#stayconnect" class="button-readmore">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services us ends -->
+<!-- Contact US -->
+<section id="stayconnect" class="bglight position-relative">
+    <div class="container">
+        <div class="contactus-wrapp">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="heading-title wow fadeInUp text-center text-md-left" data-wow-delay="300ms">
+                        <h3 class="darkcolor bottom20">Stay Connected</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    
+                    {% block content %}
+                    {% endblock content %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact US ends -->
+
+{% endblock index %}

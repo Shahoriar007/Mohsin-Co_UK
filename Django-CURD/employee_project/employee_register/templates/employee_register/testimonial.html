@@ -1,0 +1,511 @@
+{% extends "employee_register/index.html" %}
+{% block index %}
+{% load static %}
+
+{% comment %} {% static 'employee_register/' %} {% endcomment %}
+
+<!--Page Header-->
+<section id="main-banner-page" class="position-relative page-header testimonial-header section-nav-smooth parallax">
+    <div class="overlay overlay-dark opacity-7 z-index-1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="page-titles whitecolor text-center padding_top padding_bottom">
+                    <h2 class="font-xlight">We Value</h2>
+                    <h2 class="font-bold">Customer Feedback</h2>
+                    <h2 class="font-xlight">In Works</h2>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="gradient-bg title-wrap">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 whitecolor">
+                    <h3 class="float-left">Client's Feedback</h3>
+                    <ul class="breadcrumb top10 bottom10 float-right">
+                        <li class="breadcrumb-item hover-light"><a href="{% url 'services' %}">Home</a></li>
+                        <li class="breadcrumb-item hover-light">Testimonials</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Page Header ends -->
+<!--Testimonial-->
+<section id="testinomila_page" class="padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center heading_space wow fadeIn" data-wow-delay="300ms">
+                <h2 class="heading bottom30 darkcolor font-light2"><span class="font-weight-light">Client</span> Testimonials
+                    <span class="divider-center"></span>
+                </h2>
+                
+            </div>
+        </div>
+        <div id="testimonial-grid" class="cbp mt-n3">
+            <!--item 1-->
+            <div class="cbp-item wow fadeIn" data-wow-delay="350ms">
+                <div class="testimonial-wrapp">
+                    <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                    <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                    </div>
+                    <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-1.jpg' %}"></div>
+                    <h4 class="darkcolor"><a href="#.">David Raleway</a></h4>
+                    <span class="defaultcolor font-11">Businessman</span>
+                    <div class="icon mt-2 testimonial-icon">
+                        <ul class="social-icons black">
+                            <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--item 2-->
+            <div class="cbp-item wow fadeIn" data-wow-delay="400ms">
+                <div class="testimonial-wrapp">
+                    <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                    <div class="testimonial-text">
+                        <p class="bottom40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                    </div>
+                    <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-2.jpg' %}"></div>
+                    <h4 class="darkcolor"><a href="#.">Jaden Loren</a></h4>
+                    <span class="defaultcolor font-11">Businesswoman</span>
+                    <div class="icon mt-2 testimonial-icon">
+                        <ul class="social-icons black">
+                            <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--item 3-->
+            <div class="cbp-item wow fadeIn" data-wow-delay="450ms">
+                <div class="testimonial-wrapp">
+                    <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                    <div class="testimonial-text">
+                        <p class="bottom40">Lorem Ipsum is simply dummy text of the best printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                    </div>
+                    <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-3.jpg' %}"></div>
+                    <h4 class="darkcolor"><a href="#.">Kevin Johnson</a></h4>
+                    <span class="defaultcolor font-11">Businessman</span>
+                    <div class="icon mt-2 testimonial-icon">
+                        <ul class="social-icons black">
+                            <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--item 4-->
+            <div class="cbp-item wow fadeIn" data-wow-delay="500ms">
+                <div class="testimonial-wrapp">
+                    <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                    <div class="testimonial-text">
+                        <p class="bottom40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                    </div>
+                    <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-4.jpg' %}"></div>
+                    <h4 class="darkcolor"><a href="#.">Ava Smith</a></h4>
+                    <span class="defaultcolor font-11">Businesswoman</span>
+                    <div class="icon mt-2 testimonial-icon">
+                        <ul class="social-icons black">
+                            <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--item 5-->
+            <div class="cbp-item wow fadeIn" data-wow-delay="550ms">
+                <div class="testimonial-wrapp">
+                    <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                    <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                    </div>
+                    <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-5.jpg' %}"></div>
+                    <h4 class="darkcolor"><a href="#.">Mia Lan</a></h4>
+                    <span class="defaultcolor font-11">Businesswoman</span>
+                    <div class="icon mt-2 testimonial-icon">
+                        <ul class="social-icons black">
+                            <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--item 6-->
+            <div class="cbp-item wow fadeIn" data-wow-delay="600ms">
+                <div class="testimonial-wrapp">
+                    <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                    <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                    </div>
+                    <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-6.jpg' %}"></div>
+                    <h4 class="darkcolor"><a href="#.">Cris Jones</a></h4>
+                    <span class="defaultcolor font-11">Businessman</span>
+                    <div class="icon mt-2 testimonial-icon">
+                        <ul class="social-icons black">
+                            <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--item 7-->
+            <div class="cbp-item wow fadeIn" data-wow-delay="650ms">
+                <div class="testimonial-wrapp">
+                    <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                    <div class="testimonial-text">
+                        <p class="bottom40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                    </div>
+                    <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-1.jpg' %}"></div>
+                    <h4 class="darkcolor"><a href="#.">Maria Lopez</a></h4>
+                    <span class="defaultcolor font-11"><a href="#.">Businesswoman</a></span>
+                    <div class="icon mt-2 testimonial-icon">
+                        <ul class="social-icons black">
+                            <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--item 8-->
+            <div class="cbp-item wow fadeIn" data-wow-delay="700ms">
+                <div class="testimonial-wrapp">
+                    <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                    <div class="testimonial-text">
+                        <p class="bottom40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                    </div>
+                    <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-2.jpg' %}"></div>
+                    <h4 class="darkcolor"><a href="#.">Paul Gonzalez</a></h4>
+                    <span class="defaultcolor font-11">Businessman</span>
+                    <div class="icon mt-2 testimonial-icon">
+                        <ul class="social-icons black">
+                            <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Testimonial ends-->
+<!-- Counters -->
+<section id="bg-counters" class="padding bg-counters parallax">
+    <div class="container">
+        <div class="row align-items-center text-center">
+            <div class="col-lg-4 col-md-4 col-sm-4 bottom10">
+                <div class="counters whitecolor  top10 bottom10">
+                    <span class="count_nums font-light" data-to="2010" data-speed="2500"> </span>
+                </div>
+                <h3 class="font-light whitecolor top20">Since We Started</h3>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                {% comment %} <p class="whitecolor top20 bottom20 font-light title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Nunc mauris arcu, lobortis id interdum vitae, interdum eget elit. </p> {% endcomment %}
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 bottom10">
+                <div class="counters whitecolor top10 bottom10">
+                    <span class="count_nums font-light" data-to="895" data-speed="2500"> </span>
+                </div>
+                <h3 class="font-light whitecolor top20">Since We Started</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Counters ends-->
+<!--Customers Review Slider-->
+<section id="reviews" class="padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center animated wow fadeIn" data-wow-delay="300ms">
+                <h2 class="heading bottom45 darkcolor"><span class="font-weight-light">Client</span> Testimonials <span class="divider-center"></span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div id="testimonial-main-slider" class="owl-carousel">
+                    <!--item 1-->
+                    <div class="item">
+                        <div class="testimonial-wrapp">
+                            <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-1.jpg' %}"></div>
+                            <h4 class="darkcolor"><a href="#.">David Raleway</a></h4>
+                            <span class="defaultcolor font-11">Businessman</span>
+                            <div class="icon mt-2 testimonial-icon">
+                                <ul class="social-icons black">
+                                    <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item 2-->
+                    <div class="item">
+                        <div class="testimonial-wrapp">
+                            <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-2.jpg' %}"></div>
+                            <h4 class="darkcolor"><a href="#.">Jaden Loren</a></h4>
+                            <span class="defaultcolor font-11">Businesswoman</span>
+                            <div class="icon mt-2 testimonial-icon">
+                                <ul class="social-icons black">
+                                    <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item 3-->
+                    <div class="item">
+                        <div class="testimonial-wrapp">
+                            <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Lorem Ipsum is simply dummy text of the best printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-3.jpg' %}"></div>
+                            <h4 class="darkcolor"><a href="#.">Kevin Johnson</a></h4>
+                            <span class="defaultcolor font-11">Businessman</span>
+                            <div class="icon mt-2 testimonial-icon">
+                                <ul class="social-icons black">
+                                    <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item 4-->
+                    <div class="item">
+                        <div class="testimonial-wrapp">
+                            <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-4.jpg' %}"></div>
+                            <h4 class="darkcolor"><a href="#.">Ava Smith</a></h4>
+                            <span class="defaultcolor font-11">Businesswoman</span>
+                            <div class="icon mt-2 testimonial-icon">
+                                <ul class="social-icons black">
+                                    <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item 5-->
+                    <div class="item">
+                        <div class="testimonial-wrapp">
+                            <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-5.jpg' %}"></div>
+                            <h4 class="darkcolor"><a href="#.">Mia Lan</a></h4>
+                            <span class="defaultcolor font-11">Businesswoman</span>
+                            <div class="icon mt-2 testimonial-icon">
+                                <ul class="social-icons black">
+                                    <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item 6-->
+                    <div class="item">
+                        <div class="testimonial-wrapp">
+                            <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-6.jpg' %}"></div>
+                            <h4 class="darkcolor"><a href="#.">Cris Jones</a></h4>
+                            <span class="defaultcolor font-11">Businessman</span>
+                            <div class="icon mt-2 testimonial-icon">
+                                <ul class="social-icons black">
+                                    <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item 7-->
+                    <div class="item">
+                        <div class="testimonial-wrapp">
+                            <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-3.jpg' %}"></div>
+                            <h4 class="darkcolor"><a href="#.">Maria Lopez</a></h4>
+                            <span class="defaultcolor font-11"><a href="#.">Businesswoman</a></span>
+                            <div class="icon mt-2 testimonial-icon">
+                                <ul class="social-icons black">
+                                    <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item 8-->
+                    <div class="item">
+                        <div class="testimonial-wrapp">
+                            <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                            <div class="testimonial-text">
+                                <p class="bottom40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                            </div>
+                            <div class="testimonial-photo"><img alt="" src="{% static 'employee_register/images/testimonial-4.jpg' %}"></div>
+                            <h4 class="darkcolor"><a href="#.">Paul Gonzalez</a></h4>
+                            <span class="defaultcolor font-11">Businessman</span>
+                            <div class="icon mt-2 testimonial-icon">
+                                <ul class="social-icons black">
+                                    <li><a class="facebook" href="javascript:void(0)" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="twitter" href="javascript:void(0)" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a class="insta" href="javascript:void(0)" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a class="whatsapp" href="javascript:void(0)" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Customers Review-->
+
+<!-- Testimonials -->
+<section id="our-testimonial" class=" padding_bottom">
+    <div class="parallax page-header testimonial-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-6 col-md-12 text-center text-lg-right">
+                    <div class="heading-title wow fadeInUp padding_testi" data-wow-delay="300ms">
+                        <span class="whitecolor">Quisque tellus risus, adipisci</span>
+                        <h2 class="whitecolor font-normal">What People Say</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="owl-carousel" id="testimonial-slider">
+            <!--item 1-->
+            <div class="item testi-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div class="testimonial-round d-inline-block">
+                            <img src="{% static 'employee_register/images/testimonial-1.jpg' %}" alt="">
+                        </div>
+                        <h4 class="defaultcolor font-light top15"><a href="#.">John Smith</a></h4>
+                        <p>UPWORK, New York</p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-left text-center">
+                        <p class="bottom15 top90">We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we boast a years and years of service.</p>
+                        <span class="d-inline-block test-star">
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </span>
+                    </div>
+                </div>
+            </div>
+            <!--item 2-->
+            <div class="item testi-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div class="testimonial-round d-inline-block">
+                            <img src="{% static 'employee_register/images/testimonial-2.jpg' %}" alt="">
+                        </div>
+                        <h4 class="defaultcolor font-light top15"><a href="#.">Hayden Wood</a></h4>
+                        <p>FIVERR, Italy</p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-left text-center">
+                        <p class="bottom15 top90">Trax’s customer testimonial page is another beauty. Its simple design focuses on videos and standout quotes from customers. This approach is clean, straightforward, text that can be overwhelming and easy to skip.</p>
+                        <span class="d-inline-block test-star">
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> <i class="far fa-star"></i>
+                                </span>
+                    </div>
+                </div>
+            </div>
+            <!--item 3-->
+            <div class="item testi-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div class="testimonial-round d-inline-block">
+                            <img src="{% static 'employee_register/images/testimonial-3.jpg' %}" alt="">
+                        </div>
+                        <h4 class="defaultcolor font-light top15"><a href="#.">Kevin Miller</a></h4>
+                        <p>ENVATO, Australia</p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-left text-center">
+                        <p class="bottom15 top90">Trax is a company that provides tools to help professional event planning and execution, and their customers are very happy folks! The thing I love about their customer testimonial page provides content formats.</p>
+                        <span class="d-inline-block test-star">
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </span>
+                    </div>
+                </div>
+            </div>
+            <!--item 4-->
+            <div class="item testi-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div class="testimonial-round d-inline-block">
+                            <img src="{% static 'employee_register/images/testimonial-4.jpg' %}" alt="">
+                        </div>
+                        <h4 class="defaultcolor font-light top15"><a href="#.">Alina Johanson</a></h4>
+                        <p>INTEL, Sidney</p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-left text-center">
+                        <p class="bottom15 top90">Startup Institute is a career accelerator that allows professionals to learn new skills, take their careers in a different direction, and pursue a career they are passionate about that have completed the program.</p>
+                        <span class="d-inline-block test-star">
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> <i class="far fa-star"></i>
+                                </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--testimonials end-->
+
+
+{% endblock index %}

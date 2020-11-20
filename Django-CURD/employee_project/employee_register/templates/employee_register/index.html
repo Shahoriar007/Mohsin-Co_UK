@@ -1,0 +1,217 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mohsin & Co</title>
+  
+    <link href="{% static 'employee_register/images/favicon.ico' %}" rel="icon">
+    <link rel="stylesheet" href="{% static 'employee_register/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'employee_register/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'employee_register/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'employee_register/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'employee_register/css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'employee_register/css/tooltipster.min.css' %}">
+    <link rel="stylesheet" href="{% static 'employee_register/css/cubeportfolio.min.css' %}">
+    <link rel="stylesheet" href="{% static 'employee_register/css/revolution/navigation.css' %}">
+    <link rel="stylesheet" href="{% static 'employee_register/css/revolution/settings.css' %}">
+    <link rel="stylesheet" href="{% static 'employee_register/css/style.css' %}">
+</head>
+<body>
+<!--PreLoader-->
+<div class="loader">
+    <div class="loader-inner">
+        <div class="cssload-loader"></div>
+    </div>
+</div>
+<!--PreLoader Ends--> 
+<!-- header -->
+<header class="site-header" id="header">
+    <nav class="navbar navbar-expand-lg transparent-bg static-nav">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'services' %}">
+                <img src="{% static 'employee_register/images/logo-transparent.png' %}" alt="logo" class="logo-default">
+                <img src="{% static 'employee_register/images/logo.png' %}" alt="logo" class="logo-scrolled">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'services' %}"> Home </a>
+                       
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'employee_insert' %}"> Services </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'testimonial' %}">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'faq' %}">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--side menu open button-->
+        <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
+            <span></span> <span></span> <span></span>
+        </a>
+    </nav>
+    <!-- side menu -->
+    <div class="side-menu opacity-0 gradient-bg">
+        <div class="overlay"></div>
+        <div class="inner-wrapper">
+            <span class="btn-close btn-close-no-padding" id="btn_sideNavClose"><i></i><i></i></span>
+            <nav class="side-nav w-100">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'services' %}">
+                            Home
+                        </a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'employee_insert' %}">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'testimonial' %}">
+                            Testimonial
+                        </a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'faq' %}">
+                            FAQ 
+                        </a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="side-footer w-100">
+                <ul class="social-icons-simple white top40">
+                    <li><a href="https://www.facebook.com/mohsinandco"><i class="fab fa-facebook-f"></i> </a> </li>
+                    <li class="d-table"><a href="https://www.linkedin.com/company/mohsin-co-accountants/"><i class="fab fa-linkedin-in"></i> </a> </li>
+                    <li><a href="https://www.instagram.com/mohsincouk/"><i class="fab fa-instagram"></i> </a> </li>
+                </ul>
+                <p class="whitecolor">&copy; <span id="year"></span> TrafficReinUK All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <div id="close_side_menu" class="tooltip"></div>
+    <!-- End side menu -->
+</header>
+<!-- header -->
+
+
+{% block index %}
+{% endblock index %}
+
+
+<!--Site Footer Here-->
+<footer id="site-footer" class=" bgdark padding_top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20">
+                    <a href="index.html" class="footer_logo bottom25"><img src="{% static 'employee_register/images/logo.png' %}" alt="MegaOne"></a>
+                   
+                    <div class="d-table w-100 address-item whitecolor bottom25">
+                        <span class="d-table-cell align-middle"><i class="fas fa-mobile-alt"></i></span>
+                        <p class="d-table-cell align-middle bottom0">
+                            020-737-502-42 <a class="d-block" href="#"></a>
+                        </p>
+                    </div>
+                    <ul class="social-icons white wow fadeInUp" data-wow-delay="300ms">
+                        <li><a href="https://www.facebook.com/mohsinandco" class="facebook"><i class="fab fa-facebook-f"></i> </a> </li>
+                        {% comment %} <li><a href="javascript:void(0)" class="twitter"><i class="fab fa-twitter"></i> </a> </li> {% endcomment %}
+                        <li><a href="https://www.linkedin.com/company/mohsin-co-accountants/" class="linkedin"><i class="fab fa-linkedin-in"></i> </a> </li>
+                        <li><a href="https://www.instagram.com/mohsincouk/" class="insta"><i class="fab fa-instagram"></i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20 pl-0 pl-lg-5">
+                    <h3 class="whitecolor bottom25">Our Services</h3>
+                    <ul class="links">
+                        <li><a href="{% url 'services' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About Us</a></li>
+                        <li><a href="{% url 'employee_insert' %}">Services</a></li>
+                        <li><a href="{% url 'testimonial' %}">Testimonial</a></li>
+                        <li><a href="{% url 'faq' %}">FAQ</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20">
+                    <h3 class="whitecolor bottom25">Business hours</h3>
+                    {% comment %} <p class="whitecolor bottom25">Our support available to help you 24 hours a day, seven days week</p> {% endcomment %}
+                    <ul class="hours_links whitecolor">
+                        <li><span>Monday-Friday:</span> <span>10am-6pm</span></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer ends-->
+
+ <!--{% static 'employee_register/' %}-->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{% static 'employee_register/js/jquery-3.4.1.min.js' %}"></script>
+<!--Bootstrap Core-->
+<script src="{% static 'employee_register/js/propper.min.js' %}"></script>
+<script src="{% static 'employee_register/js/bootstrap.min.js' %}"></script>
+<!--to view items on reach-->
+<script src="{% static 'employee_register/js/jquery.appear.js' %}"></script>
+<!--Owl Slider-->
+<script src="{% static 'employee_register/js/owl.carousel.min.js' %}"></script>
+<!--number counters-->
+<script src="{% static 'employee_register/js/jquery-countTo.js' %}"></script>
+<!--Parallax Background-->
+<script src="{% static 'employee_register/js/parallaxie.js' %}"></script>
+<!--Cubefolio Gallery-->
+<script src="{% static 'employee_register/js/jquery.cubeportfolio.min.js' %}"></script>
+<!--Fancybox js-->
+<script src="{% static 'employee_register/js/jquery.fancybox.min.js' %}"></script>
+<!--tooltip js-->
+<script src="{% static 'employee_register/js/tooltipster.min.js' %}"></script>
+<!--wow js-->
+<script src="{% static 'employee_register/js/wow.js' %}"></script>
+<!--Revolution SLider-->
+<script src="{% static 'employee_register/js/revolution/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'employee_register/js/revolution/jquery.themepunch.revolution.min.js' %}"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+<script src="{% static 'employee_register/js/revolution/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'employee_register/js/revolution/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'employee_register/js/revolution/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'employee_register/js/revolution/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'employee_register/js/revolution/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'employee_register/js/revolution/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'employee_register/js/revolution/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'employee_register/js/revolution/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'employee_register/js/revolution/extensions/revolution.extension.video.min.js' %}"></script>
+<!--custom functions and script-->
+<script src="{% static 'employee_register/js/functions.js' %}"></script>
+</body>
+</html>

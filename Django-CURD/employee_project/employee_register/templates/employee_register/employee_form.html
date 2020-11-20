@@ -1,0 +1,48 @@
+{% extends "employee_register/services.html" %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-md-6">
+            {{form.fullname|as_crispy_field}}
+        </div>
+        <div class="col-md-6">
+            {{form.emp_code|as_crispy_field}}
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            {{form.nature|as_crispy_field}}
+        </div>
+        <div class="col-md-6">
+            {{form.mobile|as_crispy_field}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            {{form.email|as_crispy_field}}
+        </div>
+        <div class="col-md-6">
+            {{form.position|as_crispy_field}}
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <button type="submit" class="button gradient-btn w-100" id="submit_btn">
+                    Submit</button>
+            </div>
+        
+        {% comment %} <div class="col-md-4">
+            <a href="{% url 'employee_list' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-stream"></i> Back to list
+            </a>
+        </div> {% endcomment %}
+    </div>
+</form>
+{% endblock content %}

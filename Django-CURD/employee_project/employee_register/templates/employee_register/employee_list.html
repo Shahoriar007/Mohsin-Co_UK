@@ -1,0 +1,81 @@
+{% extends "employee_register/login.html" %}
+
+{% block content %}
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Show Registered list</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'services' %}">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+    </ul>
+    <h5 style="text-align: right">Hallo, {{request.user}}
+    <a href="{% url 'logout' %}" class="btn btn-outline-danger"> Logout </a>
+    <a href="{% url 'register' %}" class="btn btn-outline-dark"> Sign Up </a>
+    </h5>
+  </div>
+</nav>
+
+
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Company Name</td>
+            <td>Registration No</td>
+            <td>Nature of Business</td>
+            <td>Business Contact No</td>
+            <td>Business Email</td>
+            <td>Ask for Service</td>
+            <td>Date</td>
+            <td>
+                <a href="{% url 'employee_insert' %}" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Add New
+                </a>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for employee in employee_list %}
+            <tr>
+                <td>{{employee.fullname}}</td>
+                <td>{{employee.emp_code}}</td>
+                <td>{{employee.nature}}</td>
+                <td>{{employee.mobile}}</td>
+                <td>{{employee.email}}</td>
+                <td>{{employee.position}}</td>
+                <td>{{employee.date_created}}</td>
+                <td>
+                    <a href="{% url 'employee_update' employee.id %}" class="btn text-secondary px-0">
+                        <i class="far fa-edit fa-lg"></i>
+                    </a>
+
+                    <form action="{% url 'employee_delete' employee.id %}" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn">
+                            <i class="far fa-trash-alt float-right"></i>
+                            
+                        </button>
+                    </form>
+                   
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock content %}
