@@ -98,6 +98,6 @@ def faqPage(request):
 def testimonialPage(request):
     return render(request, 'employee_register/testimonial.html')
 
-# def handler404(request, exception):
-#     return render(request, 'employee_register/testimonial.html')
+def error_404_view(request, exception):
+     return render(request, 'employee_register/404.html')
 

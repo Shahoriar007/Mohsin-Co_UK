@@ -1,2 +1,25 @@
-<h1> 404 Error</h1>
-<h5> Page not found </h5>
+{% extends "employee_register/index.html" %}
+{% block index %}
+{% load static %}
+
+
+<!--Error 404 SECTION-->
+<section id="error" class="padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="error wow bounceIn" data-wow-delay="300ms">
+                    <h1>404</h1>
+                    <h2>404</h2>
+                </div>
+                <p class="heading_space">We are sorry, the page you want isn’t here anymore. May be one of the links below can help !</p>
+                <a href="index.html" class="button gradient-btn wow fadeIn mb-3 mb-sm-0" data-wow-delay="400ms">back to home</a>
+                <a href="javascript:void(0)" class="button btn-dark wow fadeIn" data-wow-delay="400ms">Get a quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Error 404 section end-->
+
+
+{% endblock index %}
