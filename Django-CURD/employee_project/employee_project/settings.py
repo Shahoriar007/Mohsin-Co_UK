@@ -79,20 +79,21 @@ WSGI_APPLICATION = 'employee_project.wsgi.application'
 
 
 # Database
+# again
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'DEMO_TEST',
-        'USER': 'postgres',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'myproject',
+        'USER': 'postgres1',
         'PASSWORD': '1234rewq1234rewq',
         'HOST': 'localhost',
-        'PORT': '5432'
+        'PORT': '',
     }
 }
 
-
+#
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -130,6 +131,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root/static/')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
