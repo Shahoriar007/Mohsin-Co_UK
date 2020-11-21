@@ -79,6 +79,7 @@ WSGI_APPLICATION = 'employee_project.wsgi.application'
 
 
 # Database
+# again
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
