@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'employee_project.wsgi.application'
 # }
 
 
-live_deploy = False
+live_deploy = True
 
 # replace variables accordingly
 if live_deploy == False:
