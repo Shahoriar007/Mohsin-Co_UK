@@ -7,7 +7,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Mohsin & Co</title>
+    <title>Mohsin & Co. Accountants</title>
   
     <link href="{% static 'employee_register/images/favicon.ico' %}" rel="icon">
     <link rel="stylesheet" href="{% static 'employee_register/css/bootstrap.min.css' %}">
@@ -75,10 +75,7 @@
             <nav class="side-nav w-100">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'services' %}">
-                            Home
-                        </a>
-                        
+                        <a class="nav-link" href="{% url 'services' %}">Home</a>  
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'about' %}">About</a>
@@ -106,10 +103,11 @@
             <div class="side-footer w-100">
                 <ul class="social-icons-simple white top40">
                     <li><a href="https://www.facebook.com/mohsinandco"><i class="fab fa-facebook-f"></i> </a> </li>
+                    <li class="d-table"><a href="https://Twitter.com/mohsincouk"><i class="fab fa-twitter"></i> </a> </li>
                     <li class="d-table"><a href="https://www.linkedin.com/company/mohsin-co-accountants/"><i class="fab fa-linkedin-in"></i> </a> </li>
                     <li><a href="https://www.instagram.com/mohsincouk/"><i class="fab fa-instagram"></i> </a> </li>
                 </ul>
-                <p class="whitecolor">&copy; <span id="year"></span> TrafficReinUK All rights reserved.</p>
+                <p class="whitecolor">&copy;  Developed & 2019-2020 all rights reserved by <a href="http://www.trafficrein.co.uk/">TrafficReinUK</a>.</p>
             </div>
         </div>
     </div>
@@ -139,7 +137,7 @@
                     </div>
                     <ul class="social-icons white wow fadeInUp" data-wow-delay="300ms">
                         <li><a href="https://www.facebook.com/mohsinandco" class="facebook"><i class="fab fa-facebook-f"></i> </a> </li>
-                        {% comment %} <li><a href="javascript:void(0)" class="twitter"><i class="fab fa-twitter"></i> </a> </li> {% endcomment %}
+                        <li><a href="https://Twitter.com/mohsincouk" class="twitter"><i class="fab fa-twitter"></i> </a> </li>
                         <li><a href="https://www.linkedin.com/company/mohsin-co-accountants/" class="linkedin"><i class="fab fa-linkedin-in"></i> </a> </li>
                         <li><a href="https://www.instagram.com/mohsincouk/" class="insta"><i class="fab fa-instagram"></i> </a> </li>
                     </ul>
@@ -151,7 +149,7 @@
                     <h3 class="whitecolor bottom25">Our Services</h3>
                     <ul class="links">
                         <li><a href="{% url 'services' %}">Home</a></li>
-                        <li><a href="{% url 'about' %}">About Us</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
                         <li><a href="{% url 'employee_insert' %}">Services</a></li>
                         <li><a href="{% url 'testimonial' %}">Testimonial</a></li>
                         <li><a href="{% url 'faq' %}">FAQ</a></li>
@@ -164,13 +162,30 @@
                     <h3 class="whitecolor bottom25">Business hours</h3>
                     {% comment %} <p class="whitecolor bottom25">Our support available to help you 24 hours a day, seven days week</p> {% endcomment %}
                     <ul class="hours_links whitecolor">
-                        <li><span>Monday-Friday:</span> <span>10am-6pm</span></li>
-                        
-                        
+                        <li><span>Monday:</span> <span>10:00 am - 6:00 pm</span></li>
+                        <li><span>Tuesday:</span> <span>10:00 am - 6:00 pm</span></li>
+                        <li><span>Wednesday:</span> <span>10:00 am - 6:00 pm</span></li>
+                        <li><span>Thursday:</span> <span>10:00 am - 6:00 pm</span></li>
+                        <li><span>Friday:</span> <span>10:00 am - 6:00 pm</span></li>
                     </ul>
                 </div>
             </div>
+
+
+            
+
         </div>
+
+        <div class="row">
+                <div class="col-sm-4"></div>
+
+                <div class="col-sm-8">
+                    <div style="color: darksalmon; text-align: end;">
+                        <p> © Developed & 2019-2020 all rights reserved by <a href="http://www.trafficrein.co.uk/">TrafficReinUK</a>. </p>
+                    </div>
+                </div>
+            </div>
+
     </div>
 </footer>
 <!--Footer ends-->

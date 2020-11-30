@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'lbu*!)u8h+2qn2r*k^)%e6d(y(si_(hzu&l%y1%_w6drha$75z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -82,16 +82,47 @@ WSGI_APPLICATION = 'employee_project.wsgi.application'
 # again
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'myproject',
-        'USER': 'postgres1',
-        'PASSWORD': '1234rewq1234rewq',
-        'HOST': 'localhost',
-        'PORT': '',
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'myproject',
+#         'USER': 'postgres1',
+#         'PASSWORD': '1234rewq1234rewq',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+
+
+live_deploy = False
+
+# replace variables accordingly
+if live_deploy == False:
+    DEBUG = True
+    ALLOWED_HOSTS = []
+    DATABASES = {
+        'default':{
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'DEMO_TEST', 
+            'USER': 'postgres',
+            'PASSWORD': '1234rewq1234rewq',
+            'HOST': 'localhost',
+            'PORT': '5432',
+        }
     }
-}
+elif live_deploy == True:
+    DEBUG = False
+    ALLOWED_HOSTS = ['*']
+    DATABASES = {
+        'default':{
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'myproject',
+            'USER': 'postgres1',
+            'PASSWORD': '1234rewq1234rewq',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
+    }
 
 #
 # Password validation
