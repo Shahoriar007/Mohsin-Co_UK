@@ -3063,7 +3063,7 @@ a.dropdown-toggle::after {
 }
 
 .contact-header {
-    background: url(../images/bg-contact-header.jpg) no-repeat;
+    background: url(../images/bg-contact-header.jpeg) no-repeat;
 }
 
 .gallery-header {
@@ -3673,6 +3673,12 @@ iframe {
     opacity: 0.5 !important;
 }
 
+.bg-counters-testi {
+    background: url(../images/counter-bg-testi.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    opacity: 0.5 !important;
+}
 .counters .count_nums {
     font-size: 6.25rem;
     line-height: 5rem;
