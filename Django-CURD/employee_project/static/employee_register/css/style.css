@@ -3063,6 +3063,7 @@ a.dropdown-toggle::after {
 }
 
 .contact-header {
+    background-size: contain !important;
     background: url(../images/bg-contact-header.jpeg) no-repeat;
 }
 

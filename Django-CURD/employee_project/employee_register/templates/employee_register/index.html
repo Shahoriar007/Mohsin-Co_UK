@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="{% static 'employee_register/css/style.css' %}">
 </head>
 <body>
+
+
+
 <!--PreLoader-->
 <div class="loader">
     <div class="loader-inner">
@@ -30,6 +33,7 @@
 </div>
 <!--PreLoader Ends--> 
 <!-- header -->
+
 <header class="site-header" id="header">
     <nav class="navbar navbar-expand-lg transparent-bg static-nav">
         <div class="container">
@@ -62,6 +66,13 @@
                 </ul>
             </div>
         </div>
+
+        <div class="container">
+            <div class="alert alert-danger">
+                 Please contact your website developer regarding the <strong> SSL Certification </strong>. Your website might get flagged anytime.
+            </div>
+        </div>
+
         <!--side menu open button-->
         <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
             <span></span> <span></span> <span></span>
@@ -100,6 +111,13 @@
                     </li>
                 </ul>
             </nav>
+
+            <div class="container">
+            <div class="alert alert-danger">
+                Please contact your website developer regarding the <strong> SSL Certification </strong>. Your website might get flagged anytime.
+            </div>
+        </div>
+
             <div class="side-footer w-100">
                 <ul class="social-icons-simple white top40">
                     <li><a href="https://www.facebook.com/mohsinandco"><i class="fab fa-facebook-f"></i> </a> </li>
@@ -113,8 +131,12 @@
     </div>
     <div id="close_side_menu" class="tooltip"></div>
     <!-- End side menu -->
+
+
+
 </header>
 <!-- header -->
+
 
 
 {% block index %}

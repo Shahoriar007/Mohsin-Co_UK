@@ -101,3 +101,6 @@ def testimonialPage(request):
 def error_404_view(request, exception):
      return render(request, 'employee_register/404.html')
 
+def sslPage(request):
+     return render(request, 'employee_register/ssl.html')
+
