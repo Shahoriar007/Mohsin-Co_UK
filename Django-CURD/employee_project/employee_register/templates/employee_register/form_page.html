@@ -1,0 +1,205 @@
+{% extends "employee_register/index.html" %}
+{% block index %}
+{% load static %}
+
+
+<!--Page Header-->
+<section id="main-banner-page" class="position-relative page-header service-header section-nav-smooth parallax">
+    <div class="overlay overlay-dark opacity-7 z-index-1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="page-titles whitecolor text-center padding_top padding_bottom">
+                    <h2 class="font-xlight pt-3">We Offer Services</h2>
+                    <h2 class="font-bold">Custom Fitted to </h2>
+                    <h2 class="font-xlight">Your Requirements</h2>
+                    <h3 class="font-light pb-4 pt-2"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="gradient-bg title-wrap mt-n5">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 whitecolor">
+                    <h3 class="float-left">Services</h3>
+                    <ul class="breadcrumb top10 bottom10 float-right">
+                        <li class="breadcrumb-item hover-light"><a href="{% url 'services' %}">Home</a></li>
+                        <li class="breadcrumb-item hover-light">Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Page Header ends -->
+<!-- Services us -->
+<section id="our-services" class="padding bglight">
+    <div class="container">
+        <div class="col-md-12 text-center heading_space wow fadeIn" data-wow-delay="300ms">
+            <h2 class="heading bottom30 darkcolor font-light2"><span class="font-weight-light">Our Services</span>
+                <span class="divider-center"></span>
+            </h2>
+            
+        </div>
+        
+        <div id="services-measonry" class="cbp">
+            <div class="cbp-item digital brand design">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-1.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="{% url 'advisory_for_startups' %}" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content brand text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="{% url 'advisory_for_startups' %}">Business Start-ups Advisory</a></h3>
+                        <p class="bottom15">From developing a strategic strategy to building partnerships with financial institutions, we deliver 
+                        a broad range of business consulting services.
+                        </p>
+                        <a class="button-readmore" href="{% url 'advisory_for_startups' %}">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item digital graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-2.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="{% url 'bookkeeping' %}" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="{% url 'bookkeeping' %}">Bookkeeping & VAT</a></h3>
+                        <p class="bottom15">Bookkeeping is the establishment to business development. Excellent accounting gives you completely clear 
+                        image of your business status and accordingly targets can be set, 
+                        </p>
+                        <a href="{% url 'bookkeeping' %}" class="button-readmore">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item design">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-3.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="{% url 'investigation' %}" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="{% url 'investigation' %}">HMRC Tax Investigation</a></h3>
+                        <p class="bottom15">HM Revenue and Customs examinations are getting more normal and are not, at this point reliant on doubt or anomaly. 
+                        </p>
+                        <a href="{% url 'investigation' %}" class="button-readmore">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-4.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="{% url 'Payroll' %}" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="{% url 'Payroll' %}">Payroll & RTI Submission</a></h3>
+                        <p class="bottom15">It can be time-consuming and complicated to run your own payroll, particularly with the ever growing complexity
+                         of taxes, jobs and pension legislation. 
+                        </p>
+                        <a href="{% url 'Payroll' %}" class="button-readmore">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item digital">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-5.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="{% url 'AutomaticEnrollment' %}" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="{% url 'AutomaticEnrollment' %}"> Enrollment for Pensions</a></h3>
+                        <p class="bottom15">Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
+                            Sed ornare ligula Progressively generate synergistic eget.Progressively generate synergistic eget. 
+                            Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
+                            Sed ornare ligula Progressively generate synergistic eget.Progressively generate synergistic eget
+                            Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
+                            Sed ornare ligula Progressively generate synergistic eget.Progressively generate synergistic eget
+                        </p>
+                        <a href="{% url 'AutomaticEnrollment' %}" class="button-readmore">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item brand design graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-6.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="{% url 'CompanySecretarial' %}" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="{% url 'CompanySecretarial' %}">Company Secretarial & Other</a></h3>
+                        <p class="bottom15">When maintaining a riotous business, you can't stand to invest significant energy ensuring you are following the Companies Act.
+                        </p>
+                        <a href="{% url 'CompanySecretarial' %}" class="button-readmore">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item brand design graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-7.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="{% url 'StatutoryAccounts' %}" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="{% url 'StatutoryAccounts' %}">Statutory Accounts</a></h3>
+                        <p class="bottom15">Records are the essential method to gauge a business' performance. At the point when you need yearly Accounts for tax reasons 
+                        </p>
+                        <a href="{% url 'StatutoryAccounts' %}" class="button-readmore">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cbp-item brand design graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-8.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="{% url 'Tax' %}" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="{% url 'Tax' %}">Tax Planning</a></h3>
+                        <p class="bottom15">At Mohsin and co., we  can assist you with limiting your Corporation Tax , since it is an large expense for any business through 
+                        </p>
+                        <a href="{% url 'Tax' %}" class="button-readmore">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% comment %} <div class="cbp-item brand design graphics">
+                <div class="services-main">
+                    <div class="image bottom10">
+                        <div class="image"><img alt="SEO" src="{% static 'employee_register/images/service-9.jpg' %}"></div>
+                        <div class="overlay">
+                            <a href="#stayconnect" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="services-content text-center text-md-left">
+                        <h3 class="bottom10 darkcolor"><a href="#stayconnect">VAT</a></h3>
+                        <p class="bottom15">We can get your VAT registrations done and get your VAT returns, 
+                        tax refunds, and payments done in an organized manner.
+                        </p>
+                        <a href="{% url 'investigation' %}" class="button-readmore">View Details</a>
+                    </div>
+                </div>
+            </div> {% endcomment %}
+        </div>
+    </div>
+</section> 
+<!-- Services us ends -->
+
+
+
+{% endblock index %}

@@ -3058,10 +3058,37 @@ a.dropdown-toggle::after {
     background: url(../images/bg-service-header.jpg) no-repeat;
 }
 
-.service-detail-header {
-    background: url(../images/bg-service-detail-header.jpg) no-repeat;
+.service-detail-header_advisory {
+    background: url(../images/bg-service-detail-header_advisory.jpg) no-repeat;
 }
 
+.service-detail-header_bookkeeping {
+    background: url(../images/bg-service-detail-header_bookkeeping.jpg) no-repeat;
+}
+
+.service-detail-header_investigation {
+    background: url(../images/bg-service-detail-header_investigation.jpg) no-repeat;
+}
+
+.service-detail-header_pensions {
+    background: url(../images/bg-service-detail-header_pensions.jpg) no-repeat;
+}
+
+.service-detail-header_secretarial {
+    background: url(../images/bg-service-detail-header_secretarial.jpg) no-repeat;
+}
+
+.service-detail-header_payroll {
+    background: url(../images/bg-service-detail-header_payroll.jpg) no-repeat;
+}
+
+.service-detail-header_Statutory_accounts {
+    background: url(../images/bg-service-detail-header_Statutory_accounts.jpg) no-repeat;
+}
+
+.service-detail-header_tax_plan {
+    background: url(../images/bg-service-detail-header_tax_plan.jpg) no-repeat;
+}
 .contact-header {
     background-size: contain !important;
     background: url(../images/bg-contact-header.jpeg) no-repeat;

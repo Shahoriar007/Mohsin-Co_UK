@@ -75,7 +75,9 @@ def employee_form(request, id=0):
             form = EmployeeForm(request.POST,instance= employee)
         if form.is_valid():
             form.save()
-        return redirect('employee_insert')
+        return redirect('all_services')
+
+
 
 @login_required(login_url='login')
 def employee_delete(request,id):
@@ -89,6 +91,9 @@ def aboutPage(request):
 def servicesPage(request):
     return render(request, 'employee_register/base.html')
 
+def allservices(request):
+    return render(request, 'employee_register/form_page.html')
+
 def contactPage(request):
     return render(request, 'employee_register/contact.html')
 
@@ -101,6 +106,32 @@ def testimonialPage(request):
 def error_404_view(request, exception):
      return render(request, 'employee_register/404.html')
 
-def sslPage(request):
-     return render(request, 'employee_register/ssl.html')
+# Service Details Pages
+
+def advisoryforstartups(request):
+    return render(request, 'employee_register/advisory-for-start-ups.html')
+
+def bookkeeping(request):
+    return render(request, 'employee_register/bookkeeping.html')
+
+def investigation(request):
+    return render(request, 'employee_register/investigation.html')
+
+def AutomaticEnrollment(request):
+    return render(request, 'employee_register/Automatic-Enrollment-for-pensions.html')
+
+def CompanySecretarial(request):
+    return render(request, 'employee_register/Company-Secretarial-&-Other.html')
+
+def Payroll(request):
+    return render(request, 'employee_register/Payroll-&-RTI-Submission.html')
+
+def StatutoryAccounts(request):
+    return render(request, 'employee_register/Statutory-Accounts.html')
+
+# def VAT(request):
+#     return render(request, 'employee_register/VAT.html')
+
+def Tax(request):
+    return render(request, 'employee_register/Tax-Filing.html')
 

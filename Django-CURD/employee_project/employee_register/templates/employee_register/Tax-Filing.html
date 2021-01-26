@@ -1,0 +1,127 @@
+{% extends "employee_register/index.html" %}
+{% block index %}
+{% load static %}
+
+<!--Page Header-->
+<section id="main-banner-page" class="position-relative page-header service-detail-header_tax_plan section-nav-smooth parallax">
+    <div class="overlay overlay-dark opacity-7 z-index-1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="page-titles whitecolor text-center padding_top padding_bottom">
+                    <h2 class="font-xlight"></h2>
+                    <h2 class="font-bold"></h2>
+                    <h2 class="font-xlight"></h2>
+                    <h3 class="font-light pt-2"></h3>
+                </div> 
+            </div>
+        </div>
+        <div class="gradient-bg title-wrap">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 whitecolor">
+                    <h3 class="float-left">Details</h3>
+                    <ul class="breadcrumb top10 bottom10 float-right">
+                        <li class="breadcrumb-item hover-light"><a href="{% url 'services' %}">Home</a></li>
+                        <li class="breadcrumb-item hover-light">Tax Planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Page Header ends -->
+<!-- Services us -->
+<section id="our-services" class="padding bglight">
+    <div class="container">
+        <div class="row whitebox top15">
+            <div class="col-lg-4 col-md-5">
+                <div class="image widget bottom20"><img alt="SEO" src="{% static 'employee_register/images/tax_plan.jpg' %}"></div>
+                <div class="col-12 px-0">
+                    <div class="w-100">
+                        <div class="full-map short-map" id="map"></div>
+                    </div>
+                </div>
+                <div class="widget heading_space text-center text-md-left">
+                    <h4 class="text-capitalize darkcolor bottom20">Need Help?</h4>
+                    <div class="contact-table colorone d-table bottom15">
+                        <div class="d-table-cell cells">
+                            <span class="icon-cell"><i class="fas fa-mobile-alt"></i></span>
+                        </div>
+                        <div class="d-table-cell cells">
+                            <p class="bottom0">020-737-502-42</p>
+                        </div>
+                    </div>
+                    <div class="contact-table colorone d-table bottom15 text-left">
+                        <div class="d-table-cell cells">
+                            <span class="icon-cell"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                        <div class="d-table-cell cells">
+                            <p class="bottom0">24 Osborn Street,
+                                <span class="d-block"> London E1 6TD.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-table colorone d-table text-left">
+                        <div class="d-table-cell cells">
+                            <span class="icon-cell"><i class="far fa-clock"></i></span>
+                        </div>
+                        <div class="d-table-cell cells">
+                            <p class="bottom0">Mon-Fri: 10am-6pm
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <a href="{% url 'employee_insert' %}" class="button btnsecondary gradient-btn top30"> Book an Appointment</a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+                <div class="widget heading_space text-center text-md-left">
+                    <h3 class="darkcolor font-normal bottom30">Corporation Tax</h3>
+
+                    <p class="bottom30">At Mohsin and co., we  can assist you with limiting your Corporation Tax ,
+                     since it is an large expense for any business through doing regulatory obligations to follow 
+                     charge enactment. The weight of consistence with revealing obligations, charge specialists'
+                      examinations and  punishments for rebelliousness and your duty risk could be extensively 
+                      bigger than needed. </p>
+                   
+                    <h3 class="darkcolor font-normal bottom30">Personal Tax</h3>
+                    
+                    <p class="bottom30"> It might show up a unimaginable errand to figure outpersonal tax allowances 
+                    and entitlements, yet we can help and guide you through this labyrinth, finishing individual 
+                    Tax Returns and deciding your Tax and National Insurance liability.  Everyone who is subject 
+                    to tax assessment needs proficient support if they are to optimise their tax position and 
+                    guarantee they meet all the commitments.</p>
+                     
+                    <h3 class="darkcolor font-normal bottom30">Capital Gains Tax (CGT)</h3>
+                      
+                    <p class="bottom30">Capital Gains Tax should be paid by the two Companies and people, despite the 
+                    fact that the principles vary, these incorporate property and shares. Regarding property, 
+                    you might be subject if the house you're selling has been utilized for venture purposes. 
+                     We can offer you all the essential data and guidance, ensuring that you take advantage 
+                     of your yearly tax stipends and credits. </p>
+
+                    <h3 class="darkcolor font-normal bottom30">Inheritance Tax Planning (IHT) & Estate Planning</h3>
+
+                    <p class="bottom30">Will drafting and Estate Planning, including the use of IHT reliefs and exceptions,
+                     requires a limited quantity of generally direct planning. For bigger homes, more perplexing arranging 
+                     can protect explicit resources from IHT, and your speculations can be figured out how to profit by 
+                     IHT reliefs. </p>
+
+                    <p class="bottom30">Trusts can be a significant instrument however should be deliberately drafted to 
+                    guarantee that they meet your specific necessities. We can assist with your home arranging, including
+                     progression arranging and business exit strategies. Efficient Inheritance Tax arranging will amplify
+                      your bequest by relieving potential tax liabilities that would be payable by the recipients. </p>
+
+                    
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services us ends -->
+
+
+
+{% endblock index %}

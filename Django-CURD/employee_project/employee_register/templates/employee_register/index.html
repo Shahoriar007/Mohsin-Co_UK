@@ -51,15 +51,15 @@
                         <a class="nav-link" href="{% url 'about' %}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'employee_insert' %}"> Services </a>
+                        <a class="nav-link" href="{% url 'all_services' %}"> Services </a>
 
                     </li>
-                    <li class="nav-item">
+                    {% comment %} <li class="nav-item">
                         <a class="nav-link" href="{% url 'testimonial' %}">Testimonial</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'faq' %}">FAQ</a>
-                    </li>
+                    </li> {% endcomment %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                     </li>
@@ -67,11 +67,7 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="alert alert-danger">
-                 Please contact your website developer regarding the <strong> SSL Certification </strong>. Your website might get flagged anytime.
-            </div>
-        </div>
+        
 
         <!--side menu open button-->
         <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
@@ -92,9 +88,9 @@
                         <a class="nav-link" href="{% url 'about' %}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'employee_insert' %}">Services</a>
+                        <a class="nav-link" href="{% url 'all_services' %}">Services</a>
                     </li>
-                    <li class="nav-item">
+                    {% comment %} <li class="nav-item">
                         <a class="nav-link" href="{% url 'testimonial' %}">
                             Testimonial
                         </a>
@@ -105,7 +101,7 @@
                             FAQ 
                         </a>
                         
-                    </li>
+                    </li> {% endcomment %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                     </li>
@@ -113,9 +109,7 @@
             </nav>
 
             <div class="container">
-            <div class="alert alert-danger">
-                Please contact your website developer regarding the <strong> SSL Certification </strong>. Your website might get flagged anytime.
-            </div>
+            
         </div>
 
             <div class="side-footer w-100">
@@ -125,7 +119,7 @@
                     <li class="d-table"><a href="https://www.linkedin.com/company/mohsin-co-accountants/"><i class="fab fa-linkedin-in"></i> </a> </li>
                     <li><a href="https://www.instagram.com/mohsincouk/"><i class="fab fa-instagram"></i> </a> </li>
                 </ul>
-                <p class="whitecolor">&copy;  Developed & 2019-2020 all rights reserved by <a href="http://www.trafficrein.co.uk/">TrafficReinUK</a>.</p>
+                <p class="whitecolor">&copy;  Developed by <a href="http://www.trafficrein.co.uk/">TrafficReinUK</a> & 2021-2022 all rights reserved by Mohsin & Co.</p>
             </div>
         </div>
     </div>
@@ -172,9 +166,9 @@
                     <ul class="links">
                         <li><a href="{% url 'services' %}">Home</a></li>
                         <li><a href="{% url 'about' %}">About</a></li>
-                        <li><a href="{% url 'employee_insert' %}">Services</a></li>
-                        <li><a href="{% url 'testimonial' %}">Testimonial</a></li>
-                        <li><a href="{% url 'faq' %}">FAQ</a></li>
+                        <li><a href="{% url 'all_services' %}">Services</a></li>
+                        {% comment %} <li><a href="{% url 'testimonial' %}">Testimonial</a></li>
+                        <li><a href="{% url 'faq' %}">FAQ</a></li> {% endcomment %}
                         <li><a href="{% url 'contact' %}">Contact</a></li>
                     </ul>
                 </div>
@@ -203,7 +197,7 @@
 
                 <div class="col-sm-8">
                     <div style="color: darksalmon; text-align: end;">
-                        <p> © Developed & 2019-2020 all rights reserved by <a href="http://www.trafficrein.co.uk/">TrafficReinUK</a>. </p>
+                        <p class="whitecolor">&copy;  Developed by <a href="http://www.trafficrein.co.uk/">TrafficReinUK</a> & 2021-2022 all rights reserved by Mohsin & Co.</p>
                     </div>
                 </div>
             </div>

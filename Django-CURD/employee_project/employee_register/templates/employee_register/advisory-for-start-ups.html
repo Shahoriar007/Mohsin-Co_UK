@@ -1,0 +1,120 @@
+{% extends "employee_register/index.html" %}
+{% block index %}
+{% load static %}
+
+<!--Page Header-->
+<section id="main-banner-page" class="position-relative page-header service-detail-header_advisory section-nav-smooth parallax">
+    <div class="overlay overlay-dark opacity-7 z-index-1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="page-titles whitecolor text-center padding_top padding_bottom">
+                    <h2 class="font-xlight"></h2>
+                    <h2 class="font-bold"></h2>
+                    <h2 class="font-xlight"></h2>
+                    <h3 class="font-light pt-2"></h3>
+                </div> 
+            </div>
+        </div>
+        <div class="gradient-bg title-wrap">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 whitecolor">
+                    <h3 class="float-left">Details</h3>
+                    <ul class="breadcrumb top10 bottom10 float-right">
+                        <li class="breadcrumb-item hover-light"><a href="{% url 'services' %}">Home</a></li>
+                        <li class="breadcrumb-item hover-light">Business Start-ups Advisory</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Page Header ends -->
+<!-- Services us -->
+<section id="our-services" class="padding bglight">
+    <div class="container">
+        <div class="row whitebox top15">
+            <div class="col-lg-4 col-md-5">
+                <div class="image widget bottom20"><img alt="SEO" src="{% static 'employee_register/images/advisory.jpg' %}"></div>
+                <div class="col-12 px-0">
+                    <div class="w-100">
+                        <div class="full-map short-map" id="map"></div>
+                    </div>
+                </div>
+                <div class="widget heading_space text-center text-md-left">
+                    <h4 class="text-capitalize darkcolor bottom20">Need Help?</h4>
+                    <div class="contact-table colorone d-table bottom15">
+                        <div class="d-table-cell cells">
+                            <span class="icon-cell"><i class="fas fa-mobile-alt"></i></span>
+                        </div>
+                        <div class="d-table-cell cells">
+                            <p class="bottom0">020-737-502-42</p>
+                        </div>
+                    </div>
+                    <div class="contact-table colorone d-table bottom15 text-left">
+                        <div class="d-table-cell cells">
+                            <span class="icon-cell"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                        <div class="d-table-cell cells">
+                            <p class="bottom0">24 Osborn Street,
+                                <span class="d-block"> London E1 6TD.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-table colorone d-table text-left">
+                        <div class="d-table-cell cells">
+                            <span class="icon-cell"><i class="far fa-clock"></i></span>
+                        </div>
+                        <div class="d-table-cell cells">
+                            <p class="bottom0">Mon-Fri: 10am-6pm
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <a href="{% url 'employee_insert' %}" class="button btnsecondary gradient-btn top30"> Book an Appointment</a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+                <div class="widget heading_space text-center text-md-left">
+                    <h3 class="darkcolor font-normal bottom30">Business Start-ups Advisory</h3>
+
+                    <p class="bottom30">From developing a strategic strategy to building partnerships with financial institutions,
+                     we deliver a broad range of business consulting services. We will support if you are just starting up or
+                     already set up to catapult your business success. Via specific consultation, Mohsin & Co. offers to set
+                     everything for you, enabling you to concentrate your focus and valuable time for the company. </p>
+                   
+                    <p class="bottom30">Via accurate consulting, Mohsin & Co. offers to set it up for you, enabling you to 
+                    concentrate your focus and precious business time.</p>
+                    
+                    <p class="bottom30">Many individuals who start up in business because they have a brilliant business idea,
+                     but the financial aspects of running the business can also be overwhelming for the entrepreneur. We have
+                      your back and support you by analyzing your ideas and helping your company to be financially viable
+                       and successful. Be stress free.</p>
+                     
+                    <h4 class="darkcolor font-normal bottom30">Our works comprise of</h4>
+                      
+                      <p class="bottom30">1. Deciding on the most acceptable framework for your company (Sole Trader, Partnership, 
+                      Limited Liability Partnership or Limited Company) </p>
+
+                      <p class="bottom30">2. To show and illustrate the financial feasibility of your business proposals to
+                       financial institutions or your potential investors, prepare a business plan, cash flow estimate, budget and trading forecast.  </p>
+
+                      <p class="bottom30">3. Evaluate your criteria for finance and access the most suitable source.  </p>
+
+                      <p class="bottom30">4. Help you build a partnership through our well-established communication network with banks, solicitors and other professionals.  </p>
+
+                      <p class="bottom30">5. Conduct the registration process with the house of the company and HMRC. </p>
+
+                      <p class="bottom30">6.  Establish an internal system of accounting that complies with legislative requirements. </p>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services us ends -->
+
+
+
+{% endblock index %}

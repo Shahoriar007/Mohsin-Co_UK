@@ -1,0 +1,115 @@
+{% extends "employee_register/index.html" %}
+{% block index %}
+{% load static %}
+
+<!--Page Header-->
+<section id="main-banner-page" class="position-relative page-header service-detail-header_payroll section-nav-smooth parallax">
+    <div class="overlay overlay-dark opacity-7 z-index-1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="page-titles whitecolor text-center padding_top padding_bottom">
+                    <h2 class="font-xlight"></h2>
+                    <h2 class="font-bold"></h2>
+                    <h2 class="font-xlight"></h2>
+                    <h3 class="font-light pt-2"></h3>
+                </div> 
+            </div>
+        </div>
+        <div class="gradient-bg title-wrap">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 whitecolor">
+                    <h3 class="float-left">Details</h3>
+                    <ul class="breadcrumb top10 bottom10 float-right">
+                        <li class="breadcrumb-item hover-light"><a href="{% url 'services' %}">Home</a></li>
+                        <li class="breadcrumb-item hover-light">Payroll & RTI submission</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Page Header ends -->
+<!-- Services us -->
+<section id="our-services" class="padding bglight">
+    <div class="container">
+        <div class="row whitebox top15">
+            <div class="col-lg-4 col-md-5">
+                <div class="image widget bottom20"><img alt="SEO" src="{% static 'employee_register/images/payroll.jpg' %}"></div>
+                <div class="col-12 px-0">
+                    <div class="w-100">
+                        <div class="full-map short-map" id="map"></div>
+                    </div>
+                </div>
+                <div class="widget heading_space text-center text-md-left">
+                    <h4 class="text-capitalize darkcolor bottom20">Need Help?</h4>
+                    <div class="contact-table colorone d-table bottom15">
+                        <div class="d-table-cell cells">
+                            <span class="icon-cell"><i class="fas fa-mobile-alt"></i></span>
+                        </div>
+                        <div class="d-table-cell cells">
+                            <p class="bottom0">020-737-502-42</p>
+                        </div>
+                    </div>
+                    <div class="contact-table colorone d-table bottom15 text-left">
+                        <div class="d-table-cell cells">
+                            <span class="icon-cell"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                        <div class="d-table-cell cells">
+                            <p class="bottom0">24 Osborn Street,
+                                <span class="d-block"> London E1 6TD.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-table colorone d-table text-left">
+                        <div class="d-table-cell cells">
+                            <span class="icon-cell"><i class="far fa-clock"></i></span>
+                        </div>
+                        <div class="d-table-cell cells">
+                            <p class="bottom0">Mon-Fri: 10am-6pm
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <a href="{% url 'employee_insert' %}" class="button btnsecondary gradient-btn top30"> Book an Appointment</a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+                <div class="widget heading_space text-center text-md-left">
+                    <h3 class="darkcolor font-normal bottom30">Payroll & RTI submission</h3>
+
+                    <p class="bottom30">It can be time-consuming and complicated to run your own payroll, particularly with the 
+                    ever growing complexity of taxes, jobs and pension legislation. The pressure on companies to comply with
+                     these issues is rising and non-compliance can lead to significant penalties. Our service is extensive 
+                     and confidential and involves:  </p> 
+                      
+                      <p class="bottom30">1. Payslips created by computers.</p>
+
+                      <p class="bottom30">2. PAYE administration, National Statutory and insurance payments.</p>
+
+                      <p class="bottom30">3. Completion of statutory forms and coping with HMRC forms and correspondence (including year end returns). </p>
+
+                      <p class="bottom30">4. Summaries of staff expenses and analysis Incentive programs, bonuses and ex-gratia termination payments administration.  </p>
+
+                      <p class="bottom30">5. Assistance with regulations on pensions.  </p>
+
+                      <p class="bottom30">6. Real Time Information ( RTI)  returns to HMRC
+                        On (or before) the first pay day, the RTI submission is due. E.g. If you pay your workers 
+                        on a Friday every week, the first RTI return should be sent to staff on or before the first 
+                        Friday that you make payments. On the last day of the calendar month, if you pay workers regularly, 
+                        then the first RTI return should be submitted on or before the last day of that month.
+                        </p>
+
+                        <p class="bottom30">7. We have advanced tools that can help monitor and evaluate the types of submissions that are due at any given moment in time.  </p>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services us ends -->
+
+
+
+{% endblock index %}
